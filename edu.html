@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources & Education</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        /* Breadcrumb styles */
+        .breadcrumb-nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            list-style: none;
+        }
+
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: "›";
+            padding: 0 8px;
+            color: #555;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Resources section styling */
+        .resources-section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .resources-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #222;
+        }
+
+        /* Grid layout for resource cards */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Card styles */
+        .resource-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* Image styling */
+        .resource-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .resource-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Card content */
+        .resource-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .resource-card p {
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .resources-section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with title and breadcrumb -->
+    <header>
+        <h1>Resources & Education</h1>
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Resources & Education</li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Resources Section with images -->
+    <section class="resources-section">
+        <h2>Helpful Resources</h2>
+        <div class="resources-grid">
+            <!-- Resource Card 1 -->
+            <div class="resource-card">
+                <img src="https://images.unsplash.com/photo-1581090700227-9b1c7f9d8b0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Educational Articles" class="resource-image" />
+                <h3>Educational Articles</h3>
+                <p>Read our latest articles to enhance your knowledge.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <!-- Resource Card 2 -->
+            <div class="resource-card">
+                <img src="https://images.unsplash.com/photo-1556740714-8779d7d887b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Webinars & Workshops" class="resource-image" />
+                <h3>Webinars & Workshops</h3>
+                <p>Join our upcoming webinars and workshops.</p>
+                <a href="#" class="btn">Register Now</a>
+            </div>
+            <!-- Resource Card 3 -->
+            <div class="resource-card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Guides & Manuals" class="resource-image" />
+                <h3>Guides & Manuals</h3>
+                <p>Download helpful guides and manuals.</p>
+                <a href="#" class="btn">Download</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

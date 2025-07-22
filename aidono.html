@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI-Based Donor Prediction</title>
+<!-- Google Fonts for a modern look -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="aidonor.css" />
+</head>
+<body>
+
+<!-- Navigation / Breadcrumb -->
+<nav class="breadcrumb">
+  <a href="home.html">Home</a> &gt; <a href="#">Patient-Centered Care</a> &gt; <span>AI Donor Prediction</span>
+</nav>
+
+<!-- Hero Section with Image -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>AI-Based Donor Prediction</h1>
+    <p>Leveraging advanced AI to identify the best potential donors and improve patient outcomes.</p>
+  </div>
+  <!-- Image added below the text -->
+  <div class="hero-image-container">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="AI and healthcare" class="hero-image" />
+  </div>
+</header>
+
+<!-- Main Content -->
+<main>
+  <section class="content-card">
+    <h2>Welcome to Our Predictive System</h2>
+    <p>
+      At Mayo Clinic, we utilize cutting-edge AI technology to analyze patient data and predict the most suitable donors for your needs. Our goal is to streamline the donation process and improve health outcomes through innovative solutions.
+    </p>
+    <button class="cta-button">Get Started</button>
+  </section>
+  
+  <!-- Placeholder for AI prediction model / interface -->
+  <section class="ai-prediction">
+    <h2>AI Prediction Model</h2>
+    <p>Enter patient details and receive donor prediction insights.</p>
+    <!-- Example form -->
+    <form class="prediction-form">
+      <label for="age">Age:</label>
+      <input type="number" id="age" placeholder="Enter age" />
+
+      <label for="bloodType">Blood Type:</label>
+      <select id="bloodType">
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+      </select>
+
+      <label for="healthStatus">Health Status:</label>
+      <input type="text" id="healthStatus" placeholder="Describe health" />
+
+      <button type="button" class="predict-btn">Predict Donor</button>
+    </form>
+    <!-- Prediction result -->
+    <div class="prediction-result" id="predictionResult"></div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2023 Mayo Clinic. All rights reserved.</p>
+</footer>
+
+<!-- Optional: JavaScript for interaction -->
+<script>
+  document.querySelector('.predict-btn').addEventListener('click', () => {
+    const resultDiv = document.getElementById('predictionResult');
+    resultDiv.innerHTML = "<p class='result-text'>Prediction: Suitable donor identified based on provided data.</p>";
+  });
+</script>
+
+</body>
+</html>

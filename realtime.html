@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-time Blood Requests</title>
+  <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+  <link rel="stylesheet" href="realtime.css" />
+</head>
+<body>
+  <h1>Real-time Blood Requests</h1>
+
+  <h2>Send Donation Request</h2>
+  <form id="requestForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <select id="bloodGroup" required>
+      <option value="">Select Blood Group</option>
+      <option>A+</option>
+      <option>A-</option>
+      <option>B+</option>
+      <option>B-</option>
+      <option>O+</option>
+      <option>O-</option>
+      <option>AB+</option>
+      <option>AB-</option>
+    </select>
+    <button type="submit">Send Request</button>
+  </form>
+
+  <h2>Live Requests</h2>
+  <div id="requests"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

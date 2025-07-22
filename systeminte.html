@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Integration UI</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #1b5e20;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e0f2f1;
+      border-radius: 4px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>AI Donor Prediction</h2>
+  <!-- Example input fields -->
+  <label for="age">Age</label>
+  <input type="number" id="age" placeholder="Enter age" />
+
+  <label for="bloodType">Blood Type</label>
+  <select id="bloodType">
+    <option value="">Select blood type</option>
+    <option value="A+">A+</option>
+    <option value="A-">A-</option>
+    <option value="B+">B+</option>
+    <option value="B-">B-</option>
+    <option value="AB+">AB+</option>
+    <option value="AB-">AB-</option>
+    <option value="O+">O+</option>
+    <option value="O-">O-</option>
+  </select>
+
+  <button id="predictBtn">Predict Donor</button>
+
+  <div class="result" id="result"></div>
+</div>
+
+<script>
+  document.getElementById('predictBtn').addEventListener('click', () => {
+    const age = document.getElementById('age').value;
+    const bloodType = document.getElementById('bloodType').value;
+    const resultDiv = document.getElementById('result');
+
+    if (!age || !bloodType) {
+      alert('Please enter all details');
+      return;
+    }
+
+    // Replace URL below with your API endpoint
+    fetch('http://your-backend-api/predict', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ age: parseInt(age), blood_type: bloodType })
+    })
+    .then(response => response.json())
+    .then(data => {
+      resultDiv.style.display = 'block';
+      resultDiv.innerHTML = `<strong>Prediction:</strong> ${data.result}`;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Error occurred while fetching prediction.');
+    });
+  });
+</script>
+
+</body>
+</html>

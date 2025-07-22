@@ -1,0 +1,20 @@
+{
+  "name": "hopeai",
+  "version": "1.0.0",
+  "description": "HopeAI is an AI-powered platform that connects Thalassemia patients with nearby blood donors, hospitals, and support resources. It aims to solve donor shortages, raise awareness, and provide timely help using smart technology.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kratika406/HopeAI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kratika406/HopeAI/issues"
+  },
+  "homepage": "https://github.com/kratika406/HopeAI#readme"
+}
