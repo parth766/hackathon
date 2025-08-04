@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Mayo Clinic</title>
+  <a href="connect.css"></a>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .contact-container h2 a {
+      color: #004f9f;
+      text-decoration: underline;
+    }
+
+    .contact-container p {
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .contact-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+
+    .contact-table th,
+    .contact-table td {
+      text-align: left;
+      padding: 12px 8px;
+      vertical-align: top;
+    }
+
+    .contact-table th {
+      border-bottom: 2px solid #000;
+      font-weight: bold;
+    }
+
+    .contact-table td a {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    /* Card styles */
+    .card-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 24px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .card h3 span {
+      color: #004785;
+      margin-left: 4px;
+      font-weight: bold;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 768px) {
+      .card-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contact-container">
+    <h1>Minnesota Rochester</h1>
+    <h2><a href="#">Blood Warriors</a></h2>
+    <p>200 First St. SW<br>Rochester, MN 55905</p>
+
+    <table class="contact-table">
+      <thead>
+        <tr>
+          <th>Contact</th>
+          <th>Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>General number</td>
+          <td><a href="tel:5072842511">507-284-2511</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Appointment Office</a></td>
+          <td><a href="tel:5075383270">507-538-3270</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Billing and Insurance</a></td>
+          <td><a href="tel:8442179591">844-217-9591</a> (Toll free)</td>
+        </tr>
+        <tr>
+          <td><a href="#">Billing and Insurance</a></td>
+          <td><a href="tel:5072660909">507-266-0909</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">International Center</a></td>
+          <td><a href="tel:+15075385345">+1-507-538-5345</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">International Appointment Office</a></td>
+          <td><a href="tel:+15077384021">+1-507-738-4021</a></td>
+        </tr>
+        <tr>
+          <td>International Appointment Office fax</td>
+          <td><a href="tel:+15075387802">+1-507-538-7802</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Medical records and imaging requests</a></td>
+          <td><a href="tel:5072844594">507-284-4594</a></td>
+        </tr>
+        <tr>
+          <td>Medical records requests fax</td>
+          <td><a href="tel:5072840161">507-284-0161</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Florida - Jacksonville</h1>
+    <h2><a href="#">Blood Warriors</a></h2>
+    <p>4500 San Pablo Road<br>Jacksonville, FL 32224</p>
+
+    <table class="contact-table">
+      <thead>
+        <tr>
+          <th>Contact</th>
+          <th>Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>General number</td>
+          <td><a href="tel:5072842511">507-284-2511</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Appointment Office</a></td>
+          <td><a href="tel:5075383270">507-538-3270</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Billing and Insurance</a></td>
+          <td><a href="tel:8442179591">844-217-9591</a> (toll free)</td>
+        </tr>
+        <tr>
+          <td><a href="#">Billing and Insurance</a></td>
+          <td><a href="tel:5072660909">507-266-0909</a> for international callers</td>
+        </tr>
+        <tr>
+          <td><a href="#">International Center</a></td>
+          <td><a href="tel:+15075385345">+1-507-538-5345</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">International Appointment Office</a></td>
+          <td><a href="tel:+15077384021">+1-507-738-4021</a></td>
+        </tr>
+        <tr>
+          <td>International Appointment Office fax</td>
+          <td><a href="tel:+15075387802">+1-507-538-7802</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Medical records and imaging requests</a></td>
+          <td><a href="tel:5072844594">507-284-4594</a></td>
+        </tr>
+        <tr>
+          <td>Medical records requests fax</td>
+          <td><a href="tel:5072840161">507-284-0161</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Staff phone and email directories</h2>
+    <p>Mayo Clinic doesn't have a public directory of staff phone numbers or email addresses. To contact someone,
+      call the general telephone number at a Mayo Clinic location and the operator will connect you.</p>
+
+    <!-- Cards Section -->
+    <div class="card-section">
+      <div class="card">
+        <h3>Share your experience <span>›</span></h3>
+        <p>We welcome your feedback in our continued pursuit to improve care at Mayo Clinic. Reach out to the Office of Patient Experience to share any compliments, concerns, or suggestions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Doctors and medical staff <span>›</span></h3>
+        <p>Browse our comprehensive list of doctors by name, condition, procedure, or location. Find their areas of specialty, their department, background information, and more.</p>
+      </div>
+
+      <div class="card">
+        <h3>Research staff <span>›</span></h3>
+        <p>Our clinical studies are led by a research faculty dedicated to transforming health care. Browse our faculty by last name to find their focus areas and the impact they have on patients.</p>
+      </div>
+    </div>
+  </div>
+<!-- Footer Section -->
+<footer>
+  <div style="background-color: #1b1c4a; color: white; padding: 40px 20px; text-align: center;">
+    <h1 style="margin: 0; font-size: 28px;">Fuel groundbreaking medical research!</h1>
+    <p style="margin-top: 10px;">Your donation powers the future of medicine and helps save lives.</p>
+    <a href="#" style="display: inline-block; margin-top: 16px; background-color: #0071e3; color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-weight: bold;">Give Today</a>
+  </div>
+
+  <div style="background-color: #003b70; color: white; padding: 40px 20px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; max-width: 1200px; margin: auto;">
+      <!-- Left Buttons -->
+      <div style="flex: 1 1 200px;">
+        <div style="margin-bottom: 20px; border: 1px solid #4c77af; border-radius: 10px; padding: 12px;">
+          🩺 <a href="#" style="color: white; text-decoration: none;">Find a doctor</a> →
+        </div>
+        <div style="margin-bottom: 20px; border: 1px solid #4c77af; border-radius: 10px; padding: 12px;">
+          💼 <a href="#" style="color: white; text-decoration: none;">Explore careers</a> →
+        </div>
+        <div style="border: 1px solid #4c77af; border-radius: 10px; padding: 12px;">
+          📰 <a href="#" style="color: white; text-decoration: none;">Sign up for free e-newsletters</a> →
+        </div>
+      </div>
+
+      <!-- Link Columns -->
+      <div style="flex: 1 1 150px;">
+        <h4 style="margin-bottom: 10px;">Medical Professionals →</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: white; text-decoration: none;">AskMayoExpert</a></li>
+          <br>
+          <li><a href="#" style="color: white; text-decoration: none;">Clinical Trials</a></li>
+          <br>
+          <li><a href="#" style="color: white; text-decoration: none;">Mayo Clinic Alumni Association</a></li>
+          <br>
+          <li><a href="#" style="color: white; text-decoration: none;">Refer a Patient</a></li>
+        </ul>
+      </div>
+
+      <div style="flex: 1 1 150px;">
+        <h4 style="margin-bottom: 10px;">Researchers →</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: white; text-decoration: none;">Research Faculty</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Laboratories</a></li>
+        </ul>
+      </div>
+
+      <div style="flex: 1 1 150px;">
+        <h4 style="margin-bottom: 10px;">International Patients →</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: white; text-decoration: none;">Appointments</a></li>
+          <br>
+          <li><a href="#" style="color: white; text-decoration: none;">Financial Services</a></li>
+          <br>
+          <li><a href="#" style="color: white; text-decoration: none;">International Locations & Offices</a></li>
+        </ul>
+      </div>
+
+      <div style="flex: 1 1 200px;">
+        <h4 style="margin-bottom: 10px;">Charitable Care & Financial Assistance →</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: white; text-decoration: none;">Community Health Needs Assessment</a></li>
+          <br>
+          <li><a href="#" style="color: white; text-decoration: none;">Financial Assistance Documents – Arizona</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- About Mayo Clinic -->
+    <div style="margin-top: 40px; border-top: 1px solid #4c77af; padding-top: 20px; text-align: center;">
+      <h4>About Blood Warriors</h4>
+      <p><a href="#" style="color: white; text-decoration: none;">About this Site</a> 
+        <br> <br>
+         <a href="#" style="color: white; text-decoration: none;">Contact Us</a>
+         <br> <br>
+         <a href="#" style="color: white; text-decoration: none;">Locations</a> 
+         <br> <br>
+         <a href="#" style="color: white; text-decoration: none;">Health Information Policy</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
